@@ -2,7 +2,7 @@ FROM golang:1.26-alpine AS builder
 RUN apk add --no-cache git
 RUN go install github.com/charmbracelet/gum@v0.17.0
 
-FROM alpine:3.23
+FROM alpine:3.24
 
 LABEL org.opencontainers.image.title="gum"
 LABEL org.opencontainers.image.description="Lightweight cli wrapper for charmbracelet/gum"
